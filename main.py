@@ -29,14 +29,14 @@ color_list = [(244, 235, 48), (196, 12, 35), (218, 160, 70), (43, 80, 177), (237
 tim = Turtle()
 screen = Screen()
 y_pos = sPosition
+tim.up()
+tim.hideturtle()
 
 
 def draw_line():
     for r in range(10):
         tim.dot(20, choice(color_list))
-        tim.up()
         tim.forward(50)
-        tim.down()
 
 
 for c in range(10):
